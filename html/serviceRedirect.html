@@ -1,12 +1,17 @@
+<!-- Define the document type and language -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>About US</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -16,15 +21,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styling for background image and visited links -->
     <style>
         .layer {
             opacity: 0.5;
         }
-
         body{
             background-image: url(../img/servicebg.jpeg);
         }
-
         .visited{
             text-decoration: underline;
         }
@@ -33,16 +37,20 @@
 </head>
 
 <body>
+    <!-- Side menu -->
     <div class="side-menu">
         <div class="cross-btn">
+          <!-- Cross icon -->
           <i class="fa-solid fa-xmark"></i>
         </div>
         <div class="col">
+          <!-- Logo in side menu -->
           <div class="logo-sidemenu">
             <a href="/index.html" class="logo">
               <img src="../img/logoC.png" width="124px" height="60px" alt="logo" />
             </a>
           </div>
+          <!-- Navigation links in side menu -->
           <div class="nav-sidemenu">
               <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -51,29 +59,29 @@
                 <li><a href="./service.html">Services</a></li>
               </ul>
           </div>
+          <!-- Contact information in side menu -->
           <div class="bottom">
             <h1>Contact Us:</h1>
             <p>98673348368</p>
           </div>
-         
-        
         </div>
       </div>
+    <!-- Dark overlay for side menu -->
     <div class="layer"></div>
+    <!-- Header section -->
     <header class="header">
         <div class="container">
             <div class="logo-menu">
+                <!-- Hamburger menu icon -->
                 <div class="ham-menu">
                   <i class="fa-solid fa-bars"></i>
                 </div>
+                <!-- Logo in header -->
                 <a href="/index.html" class="logo">
                   <img src="../img/logoC.png" width="124px" height="60px" alt="logo" />
                 </a>
-        
-           
-             
-              </div>
-          
+            </div>
+            <!-- Navigation menu in header -->
             <nav class="navbar" navbar>
                 <ul class="navbar-list">
                     <li class="navbar-item">
@@ -90,6 +98,7 @@
                     </li>
                 </ul>
             </nav>
+            <!-- Button for booking an appointment -->
             <div class="header-actions btn">
                 <a href="./appointment.html" class=" nav-btn">
                     <span class="span">Book an Appointment</span>
@@ -98,11 +107,14 @@
         </div>
     </header>
 
+    <!-- Main content section -->
     <main>
+        <!-- Service section 1 -->
         <section id="homeDesign" class="serviceredirect section" style="position: relative;">
             <div class="container">
                 <div class="serviceback">
                     <div class="content-service">
+                        <!-- Title and description for Home Design Services -->
                         <h1 class="h1">HOME DESIGN SERVICES</h1>
                         <br><br>
                         <p>With our professional services, you may
@@ -115,16 +127,19 @@
                              We'll work within your budget to realize your <br>
                              idea.</p>
                     </div>
+                    <!-- Image for Home Design Services -->
                     <div class="service-fig">
                         <img src="../img/homeservice.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Service section 2 -->
         <section class="serviceredirect section" style="position: relative;">
             <div class="container">
                 <div class="serviceback">
                     <div class="content-service">
+                        <!-- Title and description for Hotel Design Services -->
                         <h1 class="h1">HOTEL DESIGN SERVICES</h1>
                         <br><br>
                         <p>Enhance the atmosphere of your hotel with our
@@ -139,6 +154,7 @@
                              visitor experiences and go above and beyond <br>
                              expectations.</p>
                     </div>
+                    <!-- Image for Hotel Design Services -->
                     <div class="service-fig">
                         <img src="../img/hotelService.jpg" alt="">
                     </div>
@@ -146,10 +162,12 @@
             </div>
         </section>
 
+        <!-- Service section 3 -->
         <section class="serviceredirect section" style="position: relative;">
             <div class="container">
                 <div class="serviceback">
                     <div class="content-service">
+                        <!-- Title and description for Office Design Services -->
                         <h1 class="h1">OFFICE DESIGN SERVICES</h1>
                         <br><br>
                         <p>Utilize our specialized design services to
@@ -166,6 +184,7 @@
                               With our experience, create a workstation that 
                               <br>motivates achievement.</p>
                     </div>
+                    <!-- Image for Office Design Services -->
                     <div class="service-fig">
                         <img src="../img/officeService.jpg" alt="">
                     </div>
@@ -173,9 +192,11 @@
             </div>
         </section>
     </main>
+    <!-- Footer section -->
     <footer class="footer">
         <div class="foot-bg">
             <div class="container">
+                <!-- Social media links -->
                 <p>Follow us:</p>
                 <br>
                 <div class="social">
@@ -183,6 +204,7 @@
                     <i class="fa-brands fa-instagram"></i>
                 </div>
                 <br><br>
+                <!-- Contact link -->
                 <a href="#">
                     <span>Contact US</span>
                 </a>
@@ -191,26 +213,19 @@
 
         <div class="footer-bg"></div>
     </footer>
+    <!-- Script for side menu functionality -->
     <script>
         const hamMenu=document.querySelector(".ham-menu");
         const sideMenu=document.querySelector(".side-menu")
         const crossBtn=document.querySelector(".cross-btn")
+        // Event listener for opening side menu
         hamMenu.addEventListener("click",function(){
           sideMenu.style.cssText = "display: block;  width: 250px;background-color: white;position: fixed;top:0px ;left: 0px;height: 100vh;background-color: #0e2528;z-index: 100;";
-    
-    
-          
         })
-    
+        // Event listener for closing side menu
         crossBtn.addEventListener("click",function(){
-    sideMenu.style.cssText = "display: none;";
-          
-        }
-    
-    
-        )
-    
-      
+          sideMenu.style.cssText = "display: none;";
+        })
       </script>
 </body>
 
